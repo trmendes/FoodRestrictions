@@ -35,7 +35,6 @@
 
     <string name="no_config_msg">To show which food you don\'t or can\'t eat you have to configure it.</string>
 
-    <string name="todo">Still have to implement it. Sorry.</string>
     <string name="help_message">1) You have to configure this application using the menu option \'Restriction Settings\' to tell it which type of food you are allergic and which type of food you don\'t eat.\n\n 2) Next you will be able to choose in between a graphical version \'Show Icons\' or a text version \'Show texts\' to let people know more about your food restrictions.</string>
     <string name="help_title">How does it works?</string>
     <string name="help_not_show">Do not show it again</string>

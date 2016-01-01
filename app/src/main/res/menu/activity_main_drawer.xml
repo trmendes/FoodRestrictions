@@ -19,10 +19,6 @@
             android:icon="@drawable/ic_settings_black_24dp"
             android:title="@string/nav_app_settings" />
         <item
-            android:id="@+id/nav_donation"
-            android:icon="@drawable/ic_free_breakfast_black_24dp"
-            android:title="@string/nav_donations" />
-        <item
             android:id="@+id/nav_about_us"
             android:icon="@drawable/ic_airline_seat_recline_extra_black_24dp"
             android:title="@string/nav_about_us" />

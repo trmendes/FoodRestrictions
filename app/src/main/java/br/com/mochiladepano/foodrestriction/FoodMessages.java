@@ -133,7 +133,7 @@ public class FoodMessages extends Fragment implements AdapterView.OnItemSelected
 
     @Override
     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-        Locale locale = new Locale("pt-BR");
+        Locale locale = new Locale("pt");
         Locale.setDefault(locale);
         getResources().getConfiguration().locale = locale;
         view.getContext().getResources().updateConfiguration( getResources().getConfiguration(),

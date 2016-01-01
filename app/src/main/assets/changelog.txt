@@ -7,5 +7,4 @@ The Food Restriction Changelog file
  * Text version of the user restrictions
  * Starting with cow, chicken, pork, fish, cheese, milk and pepper
  * English and Portuguese-Brazil version
- * About/Help/Configure App/My Restrictions Config
- * Donation not implemented yet
+ * About/Configure App/My Restrictions Config

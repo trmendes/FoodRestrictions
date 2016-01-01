@@ -164,19 +164,6 @@ public class MainActivity extends AppCompatActivity
             case R.id.nav_food_settings:
                 fragmentClass = FoodIconConfig.class;
                 break;
-            case R.id.nav_donation:
-                AlertDialog.Builder builder = new AlertDialog.Builder(this);
-                builder.setMessage(getResources().getString(R.string.todo));
-                builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int which) {
-                        settingsApp.setHelpDialog(false);
-                        dialog.dismiss();
-                    }
-                });
-
-                AlertDialog alert = builder.create();
-                alert.show();
-                break;
             case R.id.nav_about_us:
                 fragmentClass = AboutUs.class;
                 break;
