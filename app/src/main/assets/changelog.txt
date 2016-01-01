@@ -1,0 +1,11 @@
+The Food Restriction Changelog file
+
+- 2016.01.01 (build 1)
+
+ * The Food Restriction goes Open Source (gpl3)
+ * Graphical version of the user restrictions
+ * Text version of the user restrictions
+ * Starting with cow, chicken, pork, fish, cheese, milk and pepper
+ * English and Portuguese-Brazil version
+ * About/Help/Configure App/My Restrictions Config
+ * Donation not implemented yet

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_icons"
+            android:icon="@drawable/ic_wallpaper_black_24dp"
+            android:title="@string/nav_icon_mode" />
+        <item
+            android:id="@+id/nav_text"
+            android:icon="@drawable/ic_format_color_text_black_24dp"
+            android:title="@string/nav_text_mode" />
+        <item
+            android:id="@+id/nav_food_settings"
+            android:icon="@drawable/ic_local_dining_black_24dp"
+            android:title="@string/nav_food_settings" />
+        <item
+            android:id="@+id/nav_app_settings"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="@string/nav_app_settings" />
+        <item
+            android:id="@+id/nav_donation"
+            android:icon="@drawable/ic_free_breakfast_black_24dp"
+            android:title="@string/nav_donations" />
+        <item
+            android:id="@+id/nav_about_us"
+            android:icon="@drawable/ic_airline_seat_recline_extra_black_24dp"
+            android:title="@string/nav_about_us" />
+    </group>
+
+</menu>

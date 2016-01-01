@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name" translatable="false">Food Restriction</string>
+
+    <string name="navigation_drawer_open">Abrir a gaveta</string>
+    <string name="navigation_drawer_close">Fechar a gaveta</string>
+
+    <string name="allergic">Eu sou alergico</string>
+    <string name="dont_eat">Eu nao como</string>
+
+    <string name="message_allergic_to">Eu sou alergico a</string>
+    <string name="message_dont_eat">Eu nao como</string>
+
+    <string name="nav_food_settings">Minhas Restricoes</string>
+    <string name="nav_donations">Que tal um cafe?</string>
+    <string name="nav_icon_mode">Icones</string>
+    <string name="nav_text_mode">Textos</string>
+    <string name="nav_help_us">Ajuda :D</string>
+    <string name="nav_about_us">Sobre nos \\O/</string>
+
+    <string name="food_msg_not_allergic">Eu nao sou alergico a nenhum tipo de comida</string>
+    <string name="food_msg_not_picker">Eu como qualquer coisa</string>
+
+    <string name="cow">Vaca</string>
+    <string name="chicken">Frango</string>
+    <string name="pork">Porco</string>
+    <string name="fish">Peixe</string>
+    <string name="cheese">Queijo</string>
+    <string name="milk">Leite</string>
+    <string name="pepper">Pimenta</string>
+    <string name="app_settings_turn_serious_mode_on">Ativar o modo serio :(</string>
+    <string name="app_settings_show_help_dialog">Mostrar dialogo de ajuda</string>
+    <string name="app_settings_show_adds_to_help_us">Show Adds to help us</string>
+
+    <string name="no_config_msg">Para mostrar o que voce nao pode comer e necessario configurar o aplicativo primeiro</string>
+
+    <string name="todo">Ainda tenho que implementar. Mal ai :(</string>
+    <string name="help_message">1) You have to configure this application using the menu option \'Restriction Settings\' to tell it which type of food you are allergic and which type of food you don\'t eat.\n\n 2) Next you will be able to choose in between a graphical version \'Show Icons\' or a text version \'Show texts\' to let people know more about your food restrictions.</string>
+    <string name="help_title">Como funciona?</string>
+    <string name="help_not_show">Nao mostre novamente</string>
+    <string name="about_us_bt_changelog">Changelog</string>
+
+    <string name="about_us_developers_title">Desenvolvedores</string>
+    <string name="about_us_icons_title">Icones</string>
+    <string name="about_us_developers_text" translatable="false">* Thiago Ribeiro Mendes</string>
+    <string name="about_us_icons_text" translatable="false">* Marcelo Torres\n *Google Team (https://design.google.com/icons/)</string>
+
+    <string name="app_version">Versao</string>
+    <string name="select_a_language">Lingua para mostrar</string>
+    <string name="nav_app_settings">Configuracoes</string>
+
+</resources>
