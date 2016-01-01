@@ -21,7 +21,7 @@ For any question, bug report, suggestion please drop us a line
 #### Translate
 
 If you want to join our translation team: [Food Restriction Translation Project on
-Crowdin.net](https://crowdin.net/project/food-manager)
+Crowdin.net](https://crowdin.com/translate/food-restrictions)
 
 #### The Food Restriction Project Team
 

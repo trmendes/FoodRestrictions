@@ -31,7 +31,6 @@
 
     <string name="app_settings_turn_serious_mode_on">Turn Serious Mode On :(</string>
     <string name="app_settings_show_help_dialog">Show help Dialog</string>
-    <string name="app_settings_show_adds_to_help_us">Show Adds to help us</string>
 
     <string name="no_config_msg">To show which food you don\'t or can\'t eat you have to configure it.</string>
 
