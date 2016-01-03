@@ -19,6 +19,8 @@
 
 package br.com.mochiladepano.foodrestriction;
 
+import android.content.res.Configuration;
+import android.content.res.Resources;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
@@ -39,9 +41,16 @@ import java.util.Locale;
 public class FoodMessages extends Fragment implements AdapterView.OnItemSelectedListener {
 
     private FoodIconList foodIconList;
+    private List<FoodIconItem> restrictList;
+    private LinearLayout llAllergic;
+    private LinearLayout llDontEat;
+    private TextView allergicTitle;
+    private TextView allergicText;
+    private TextView dontEatTitle;
+    private TextView dontEatText;
 
     public FoodMessages() {
-        foodIconList = new FoodIconList();
+        this.foodIconList = new FoodIconList();
     }
 
     @Override
@@ -50,11 +59,15 @@ public class FoodMessages extends Fragment implements AdapterView.OnItemSelected
         View v = inflater.inflate(R.layout.activity_restriction_message,
                 container, false);
 
-        List<FoodIconItem> restrictList = foodIconList.getFoodRestrictionList(true);
+        restrictList = foodIconList.getFoodRestrictionList(true);
 
+        llAllergic = (LinearLayout) v.findViewById(R.id.llAllergic);
+        llDontEat = (LinearLayout) v.findViewById(R.id.llDontEat);
 
-        LinearLayout llAllergic = (LinearLayout) v.findViewById(R.id.llAllergic);
-        LinearLayout llDontEat = (LinearLayout) v.findViewById(R.id.llDontEat);
+        allergicTitle = (TextView) v.findViewById(R.id.messages_allergic_title);
+        allergicText = (TextView) v.findViewById(R.id.messages_allergic_text);
+        dontEatTitle = (TextView) v.findViewById(R.id.messages_dont_eat_title);
+        dontEatText = (TextView) v.findViewById(R.id.messages_dont_eat_text);
 
         Spinner spinner = (Spinner) v.findViewById(R.id.spinner_language);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(v.getContext(),
@@ -63,8 +76,58 @@ public class FoodMessages extends Fragment implements AdapterView.OnItemSelected
         spinner.setAdapter(adapter);
         spinner.setOnItemSelectedListener(this);
 
+        return v;
+    }
+
+    @Override
+    public void onItemSelected(AdapterView<?> adapterView, View v, int i, long l) {
+
+        /* //TODO - Find a better way of doing it
+         * I don't believe that this is the best approach to handle this problem but it is
+         * the only way I found to do it so far. Do you have any better idea?
+         * please help me here :D
+         */
+
+        /* Getting the current resource  and config info */
+        Resources rsc =  v.getContext().getResources();
+        Configuration config = new Configuration(rsc.getConfiguration());
+        /* Saving the original locale before changing to the new one
+         * just to show the texts
+         */
+        Locale orgLocale = config.locale;
+
+        /* Changing the language to the one the user have selected based on the
+         * Languages.xml file
+         */
+        switch (i) {
+            /* English */
+            case 0:
+                config.locale = new Locale("en");
+                break;
+            /* Portuguese */
+            case 1:
+                config.locale = new Locale("pt");
+                break;
+        }
+
+        /* Setting the new locale */
+        rsc.updateConfiguration(config, rsc.getDisplayMetrics());
+        refreshMessages(v);
+
+        /* Updating the layout with the new selected language */
+
+        /* Return to last locale to keep the app as it was before */
+        config.locale = orgLocale;
+        rsc.updateConfiguration(config, rsc.getDisplayMetrics());
+    }
+
+    private void refreshMessages(View v) {
+
         int nAllergic = 0;
         int nDontEat = 0;
+
+        llAllergic.removeAllViews();
+        llDontEat.removeAllViews();
 
         for (final FoodIconItem iconItem : restrictList) {
             final String foodName = getResources().getString(iconItem.getNameId());
@@ -79,11 +142,11 @@ public class FoodMessages extends Fragment implements AdapterView.OnItemSelected
                 public void onClick(View v) {
                     switch (iconItem.getRestrictionType()) {
                         case FoodIconList.FOOD_RESTRICTION_TYPE_ALLERGIC:
-                            Snackbar.make(v, v.getResources().getString(R.string.message_allergic_to) + " " + foodName, Snackbar.LENGTH_LONG)
+                            Snackbar.make(v, getResources().getString(R.string.message_allergic_to) + " " + foodName, Snackbar.LENGTH_LONG)
                                     .setAction("Action", null).show();
                             break;
                         case FoodIconList.FOOD_RESTRICTION_TYPE_DONT_EAT:
-                            Snackbar.make(v, v.getResources().getString(R.string.message_dont_eat) + " " + foodName, Snackbar.LENGTH_LONG)
+                            Snackbar.make(v, getResources().getString(R.string.message_dont_eat) + " " + foodName, Snackbar.LENGTH_LONG)
                                     .setAction("Action", null).show();
                             break;
                     }
@@ -102,9 +165,6 @@ public class FoodMessages extends Fragment implements AdapterView.OnItemSelected
         }
 
         if (nAllergic == 0) {
-            TextView allergicTitle = (TextView) v.findViewById(R.id.messages_allergic_title);
-            TextView allergicText = (TextView) v.findViewById(R.id.messages_allergic_text);
-
             allergicTitle.setVisibility(View.GONE);
             allergicText.setVisibility(View.GONE);
 
@@ -113,12 +173,12 @@ public class FoodMessages extends Fragment implements AdapterView.OnItemSelected
             tv.setTypeface(null, Typeface.BOLD_ITALIC);
             tv.setText("* " + getResources().getString(R.string.food_msg_not_allergic));
             llAllergic.addView(tv);
+        } else {
+            allergicTitle.setText(getResources().getString(R.string.message_allergic_to));
+            allergicText.setText(getResources().getString(R.string.allergic_msg));
         }
 
         if (nDontEat == 0) {
-            TextView dontEatTitle = (TextView) v.findViewById(R.id.messages_dont_eat_title);
-            TextView dontEatText = (TextView) v.findViewById(R.id.messages_dont_eat_text);
-
             dontEatTitle.setVisibility(View.GONE);
             dontEatText.setVisibility(View.GONE);
 
@@ -127,17 +187,10 @@ public class FoodMessages extends Fragment implements AdapterView.OnItemSelected
             tv.setTypeface(null, Typeface.BOLD_ITALIC);
             tv.setText("* " + getResources().getString(R.string.food_msg_not_picker));
             llDontEat.addView(tv);
+        } else {
+            dontEatTitle.setText(getResources().getString(R.string.message_dont_eat));
+            dontEatText.setText(getResources().getString(R.string.donteat_msg));
         }
-        return v;
-    }
-
-    @Override
-    public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-        Locale locale = new Locale("pt");
-        Locale.setDefault(locale);
-        getResources().getConfiguration().locale = locale;
-        view.getContext().getResources().updateConfiguration( getResources().getConfiguration(),
-                view.getContext().getResources().getDisplayMetrics());
     }
 
     @Override
