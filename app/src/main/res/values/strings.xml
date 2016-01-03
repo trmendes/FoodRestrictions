@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name" translatable="false">Food Restrictions</string>
     <string name="about_us_developers_text" translatable="false">* Thiago Ribeiro Mendes</string>
-    <string name="about_us_icons_text" translatable="false">* Marcelo Torres\n *Google Team (https://design.google.com/icons/)</string>
+    <string name="about_us_icons_text" translatable="false">* Marcelo Torres</string>
     <string name="about_us_bt_changelog" translatable="false">Changelog</string>
     <string name="app_version">Version</string>
 
@@ -50,5 +50,6 @@
     <string name="serious_mode_off_msg">Awesome :D. Life is too good. Let\'s have some fun :D</string>
 
     <string name="about_us_translate">Help us to translate it</string>
+    <string name="about_us_thanks_to">We thanks to (opensource/cc)</string>
 
 </resources>

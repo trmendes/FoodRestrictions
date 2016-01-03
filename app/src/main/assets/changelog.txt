@@ -6,4 +6,3 @@
  * Starting with cow, chicken, pork, fish, cheese, milk and pepper
  * English and Portuguese-Brazil version
  * Show Icons/Show Texts/My Restricions/Settings/About
- * We are at Crowdin now https://crowdin.com/project/food-restrictions

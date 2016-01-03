@@ -8,7 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/ivLogo"
-        android:src="@drawable/ic_launcher" />
+        android:src="@mipmap/ic_launcher" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -24,54 +24,13 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="@string/app_version"
         android:id="@+id/tvVersion"
-        android:padding="20dp"
+        android:padding="5dp"
         android:layout_gravity="center_horizontal" />
 
     <View
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:background="?android:attr/listDivider"
-        android:layout_margin="10dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="@string/about_us_developers_title"
-        android:id="@+id/tvDevelopersTitle"
-        android:layout_marginTop="10dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="@string/about_us_developers_text"
-        android:id="@+id/tvDelelopersText" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="@string/about_us_icons_title"
-        android:id="@+id/tvIconsTitle" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="@string/about_us_icons_text"
-        android:id="@+id/textIconsText" />
-
-    <Button
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:padding="20dp"
-        android:text="@string/about_us_translate"
-        android:id="@+id/about_us_bt_translate"
         android:layout_margin="5dp" />
 
     <Button
@@ -81,5 +40,11 @@
         android:text="@string/about_us_bt_changelog"
         android:id="@+id/about_us_bt_changelog"
         android:layout_margin="5dp" />
+
+    <WebView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/webViewCredits"
+        android:layout_gravity="center_horizontal" />
 
 </LinearLayout>

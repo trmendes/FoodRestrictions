@@ -20,14 +20,13 @@
 package br.com.mochiladepano.foodrestriction;
 
 import android.content.DialogInterface;
-import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AlertDialog;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -46,10 +45,11 @@ public class AboutUs extends Fragment implements View.OnClickListener {
 
         TextView appVersion = (TextView) v.findViewById(R.id.tvVersion);
         Button btChangelog = (Button) v.findViewById(R.id.about_us_bt_changelog);
-        Button btTranslate = (Button) v.findViewById(R.id.about_us_bt_translate);
+        WebView webViewCredits = (WebView) v.findViewById(R.id.webViewCredits);
 
         btChangelog.setOnClickListener(this);
-        btTranslate.setOnClickListener(this);
+
+        webViewCredits.loadUrl("file:///android_asset/credits.html");
 
         int versionCode = BuildConfig.VERSION_CODE;
         String versionName = BuildConfig.VERSION_NAME;
@@ -64,12 +64,6 @@ public class AboutUs extends Fragment implements View.OnClickListener {
     public void onClick(View view) {
 
         switch (view.getId()) {
-            case R.id.about_us_bt_translate:
-                Intent intent = new Intent(Intent.ACTION_VIEW,
-                        Uri.parse("https://crowdin.com/project/food-restrictions"));
-                startActivity(intent);
-
-                break;
 
             case R.id.about_us_bt_changelog:
                 try {
