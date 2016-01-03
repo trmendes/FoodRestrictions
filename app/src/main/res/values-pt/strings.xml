@@ -1,51 +1,38 @@
 <resources>
-    <string name="app_name" translatable="false">Food Restriction</string>
-
-    <string name="navigation_drawer_open">Abrir a gaveta</string>
-    <string name="navigation_drawer_close">Fechar a gaveta</string>
-
-    <string name="allergic">Eu sou alergico</string>
-    <string name="dont_eat">Eu nao como</string>
-
-    <string name="message_allergic_to">Eu sou alergico a</string>
-    <string name="message_dont_eat">Eu nao como</string>
-
-    <string name="nav_food_settings">Minhas Restricoes</string>
-    <string name="nav_donations">Que tal um cafe?</string>
-    <string name="nav_icon_mode">Icones</string>
-    <string name="nav_text_mode">Textos</string>
-    <string name="nav_help_us">Ajuda :D</string>
-    <string name="nav_about_us">Sobre nos \\O/</string>
-
-    <string name="food_msg_not_allergic">Eu nao sou alergico a nenhum tipo de comida</string>
-    <string name="food_msg_not_picker">Eu como qualquer coisa</string>
-
-    <string name="cow">Vaca</string>
-    <string name="chicken">Frango</string>
-    <string name="pork">Porco</string>
-    <string name="fish">Peixe</string>
-    <string name="cheese">Queijo</string>
-    <string name="milk">Leite</string>
-    <string name="pepper">Pimenta</string>
-    <string name="app_settings_turn_serious_mode_on">Ativar o modo serio :(</string>
-    <string name="app_settings_show_help_dialog">Mostrar dialogo de ajuda</string>
-    <string name="app_settings_show_adds_to_help_us">Show Adds to help us</string>
-
-    <string name="no_config_msg">Para mostrar o que voce nao pode comer e necessario configurar o aplicativo primeiro</string>
-
-    <string name="todo">Ainda tenho que implementar. Mal ai :(</string>
-    <string name="help_message">1) You have to configure this application using the menu option \'Restriction Settings\' to tell it which type of food you are allergic and which type of food you don\'t eat.\n\n 2) Next you will be able to choose in between a graphical version \'Show Icons\' or a text version \'Show texts\' to let people know more about your food restrictions.</string>
-    <string name="help_title">Como funciona?</string>
-    <string name="help_not_show">Nao mostre novamente</string>
-    <string name="about_us_bt_changelog">Changelog</string>
-
-    <string name="about_us_developers_title">Desenvolvedores</string>
-    <string name="about_us_icons_title">Icones</string>
-    <string name="about_us_developers_text" translatable="false">* Thiago Ribeiro Mendes</string>
-    <string name="about_us_icons_text" translatable="false">* Marcelo Torres\n *Google Team (https://design.google.com/icons/)</string>
-
-    <string name="app_version">Versao</string>
-    <string name="select_a_language">Lingua para mostrar</string>
-    <string name="nav_app_settings">Configuracoes</string>
-
+  <string name="app_version">Versão</string>
+  <string name="navigation_drawer_open">Abrir gaveta de navegação</string>
+  <string name="navigation_drawer_close">Fechar gaveta de navegação</string>
+  <string name="allergic">Eu sou alérgico</string>
+  <string name="dont_eat">Eu não como</string>
+  <string name="allergic_to">Eu sou alérgico a</string>
+  <string name="nav_app_settings">Configurações</string>
+  <string name="nav_food_settings">Minhas restrições</string>
+  <string name="nav_donations">Que tal um café?</string>
+  <string name="nav_icon_mode">Mostrar ícones</string>
+  <string name="nav_text_mode">Mostrar texto</string>
+  <string name="nav_help_us">Nos Ajude :D</string>
+  <string name="nav_about_us">Sobre Nós \\o/</string>
+  <string name="food_msg_not_allergic">Eu não sou alérgico a nenhum tipo de comida</string>
+  <string name="food_msg_not_picker">Eu não tenho frescura com comida</string>
+  <string name="cow">Vaca</string>
+  <string name="chicken">Frango</string>
+  <string name="pork">Porco</string>
+  <string name="fish">Peixe</string>
+  <string name="cheese">Queijo</string>
+  <string name="milk">Leite</string>
+  <string name="pepper">Pimenta</string>
+  <string name="app_settings_turn_serious_mode_on">Ativar o modo sério :(</string>
+  <string name="app_settings_show_help_dialog">Exibir a mensagem de ajuda</string>
+  <string name="no_config_msg">Para mostrar quais as suas restrições alimentares você precisa configurar primeiro.</string>
+  <string name="help_title">Como funciona?</string>
+  <string name="help_message">1) Você precisa configurar o aplicativo usando a opção do menu \'Minhas restrições\' para dizer qual o tipo de comida você é alético e qual você não come.\n\n 2) Depois você poderá escolher entre exibir os dados sobre suas restrições alimentares para as pessoas utilizando o menu \'Exibir ícones\' ou \'Exibir texto\'.</string>
+  <string name="help_not_show">Não mostre novamente</string>
+  <string name="about_us_developers_title">Desenvolvedores</string>
+  <string name="about_us_icons_title">Desenvolvedores dos Ícones</string>
+  <string name="select_a_language">Língua para mostrar</string>
+  <string name="what_can_you_eat">O que você pode comer?</string>
+  <string name="message_allergic_to">Oi! Eu queria lhe dizer que sou alérgico as comidas listadas abaixo. Por favor certifique-se de que não esta usando nenhuma delas no meu prato.</string>
+  <string name="message_dont_eat">Oi! Eu quero lhe dizer que eu não como nenhuma dessas comidas listadas abaixo. Por favor certifique-se de que não esta usando nenhuma delas no meu prato.</string>
+  <string name="serious_mode_on_msg">Não!! Fala Sério? Para que levar a vida tão a sério assim? Mas tudo bem. Vamos ativar o modo sério :D</string>
+  <string name="serious_mode_off_msg">Demais :D. A vida é muito boa. Vamos nos divertir um pouco :D</string>
 </resources>

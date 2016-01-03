@@ -32,16 +32,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="@string/i_m_alergic"
-            android:id="@+id/messages_allergic_title" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="@string/allergic_msg"
+            android:text="@string/message_allergic_to"
             android:id="@+id/messages_allergic_text"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp" />
 
         <LinearLayout
             android:padding="10dip"
@@ -60,16 +54,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="@string/i_don_t_eat"
-            android:id="@+id/messages_dont_eat_title" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="@string/donteat_msg"
+            android:text="@string/message_dont_eat"
             android:id="@+id/messages_dont_eat_text"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp" />
 
         <LinearLayout
             android:padding="10dip"

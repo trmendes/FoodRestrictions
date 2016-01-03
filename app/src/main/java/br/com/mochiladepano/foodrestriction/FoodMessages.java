@@ -44,9 +44,7 @@ public class FoodMessages extends Fragment implements AdapterView.OnItemSelected
     private List<FoodIconItem> restrictList;
     private LinearLayout llAllergic;
     private LinearLayout llDontEat;
-    private TextView allergicTitle;
     private TextView allergicText;
-    private TextView dontEatTitle;
     private TextView dontEatText;
 
     public FoodMessages() {
@@ -64,9 +62,7 @@ public class FoodMessages extends Fragment implements AdapterView.OnItemSelected
         llAllergic = (LinearLayout) v.findViewById(R.id.llAllergic);
         llDontEat = (LinearLayout) v.findViewById(R.id.llDontEat);
 
-        allergicTitle = (TextView) v.findViewById(R.id.messages_allergic_title);
         allergicText = (TextView) v.findViewById(R.id.messages_allergic_text);
-        dontEatTitle = (TextView) v.findViewById(R.id.messages_dont_eat_title);
         dontEatText = (TextView) v.findViewById(R.id.messages_dont_eat_text);
 
         Spinner spinner = (Spinner) v.findViewById(R.id.spinner_language);
@@ -125,6 +121,11 @@ public class FoodMessages extends Fragment implements AdapterView.OnItemSelected
 
         int nAllergic = 0;
         int nDontEat = 0;
+        String victory = "";
+
+        if (!MainActivity.getAppSettings().isSeriosMode()) {
+            victory = "\\0/";
+        }
 
         llAllergic.removeAllViews();
         llDontEat.removeAllViews();
@@ -165,7 +166,6 @@ public class FoodMessages extends Fragment implements AdapterView.OnItemSelected
         }
 
         if (nAllergic == 0) {
-            allergicTitle.setVisibility(View.GONE);
             allergicText.setVisibility(View.GONE);
 
             TextView tv = new TextView(v.getContext());
@@ -174,13 +174,11 @@ public class FoodMessages extends Fragment implements AdapterView.OnItemSelected
             tv.setText("* " + getResources().getString(R.string.food_msg_not_allergic));
             llAllergic.addView(tv);
         } else {
-            allergicTitle.setText(getResources().getString(R.string.message_allergic_to));
-            allergicText.setText(getResources().getString(R.string.allergic_msg));
+            allergicText.setText(getResources().getString(R.string.message_allergic_to));
         }
 
         if (nDontEat == 0) {
-            dontEatTitle.setVisibility(View.GONE);
-            dontEatText.setVisibility(View.GONE);
+                dontEatText.setVisibility(View.GONE);
 
             TextView tv = new TextView(v.getContext());
             tv.setTextSize(TypedValue.COMPLEX_UNIT_SP, 18);
@@ -188,8 +186,7 @@ public class FoodMessages extends Fragment implements AdapterView.OnItemSelected
             tv.setText("* " + getResources().getString(R.string.food_msg_not_picker));
             llDontEat.addView(tv);
         } else {
-            dontEatTitle.setText(getResources().getString(R.string.message_dont_eat));
-            dontEatText.setText(getResources().getString(R.string.donteat_msg));
+            dontEatText.setText(getResources().getString(R.string.message_dont_eat));
         }
     }
 

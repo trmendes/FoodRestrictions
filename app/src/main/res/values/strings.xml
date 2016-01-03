@@ -1,27 +1,29 @@
 <resources>
     <string name="app_name" translatable="false">Food Restriction</string>
+    <string name="about_us_developers_text" translatable="false">* Thiago Ribeiro Mendes</string>
+    <string name="about_us_icons_text" translatable="false">* Marcelo Torres\n *Google Team (https://design.google.com/icons/)</string>
+    <string name="about_us_bt_changelog" translatable="false">Changelog</string>
+    <string name="app_version">Version</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="allergic">I\'m Allergic</string>
-    <string name="dont_eat">I don\'t eat this</string>
+    <string name="dont_eat">I don\'t eat</string>
+    <string name="allergic_to">I\'m Allergic to</string>
 
-    <string name="message_allergic_to">I\'m Allergic to </string>
-    <string name="message_dont_eat">I don\'t eat </string>
-
-    <string name="nav_app_settings">App Settings</string>
+    <string name="nav_app_settings">Settings</string>
     <string name="nav_food_settings">My Restrictions</string>
     <string name="nav_donations">What about a coffee?</string>
     <string name="nav_icon_mode">Show Icons</string>
     <string name="nav_text_mode">Show Texts</string>
     <string name="nav_help_us">Help Us :D</string>
-    <string name="nav_about_us">About Us \\O/</string>
+    <string name="nav_about_us">About Us \\o/</string>
 
     <string name="food_msg_not_allergic">I\'m not allergic to any type of food</string>
-    <string name="food_msg_not_picker">I\'m not picker with the food :D</string>
+    <string name="food_msg_not_picker">I\'m not picker with the food</string>
 
-    <string name="cow">Cow</string>
+    <string name="cow">Cow</string>allergic
     <string name="chicken">Chicken</string>
     <string name="pork">Pork</string>
     <string name="fish">Fish</string>
@@ -32,23 +34,20 @@
     <string name="app_settings_turn_serious_mode_on">Turn Serious Mode On :(</string>
     <string name="app_settings_show_help_dialog">Show help Dialog</string>
 
-    <string name="no_config_msg">To show which food you don\'t or can\'t eat you have to configure it.</string>
-
-    <string name="help_message">1) You have to configure this application using the menu option \'Restriction Settings\' to tell it which type of food you are allergic and which type of food you don\'t eat.\n\n 2) Next you will be able to choose in between a graphical version \'Show Icons\' or a text version \'Show texts\' to let people know more about your food restrictions.</string>
+    <string name="no_config_msg">To be able to show your Food Restrictions you have to configure it first</string>
     <string name="help_title">How does it works?</string>
+    <string name="help_message">1) You have to configure this application using the menu option \'My Restrictions\' to tell it which type of food you are allergic and which type of food you don\'t eat.\n\n 2) Next you will be able to choose in between a graphical version \'Show Icons\' or a text version \'Show texts\' to let people know more about your food restrictions.</string>
     <string name="help_not_show">Do not show it again</string>
-    <string name="about_us_bt_changelog">Changelog</string>
+
     <string name="about_us_developers_title">Source Developers</string>
     <string name="about_us_icons_title">Icon Developers</string>
-    <string name="about_us_developers_text" translatable="false">* Thiago Ribeiro Mendes</string>
-    <string name="about_us_icons_text" translatable="false">* Marcelo Torres\n *Google Team (https://design.google.com/icons/)</string>
 
-    <string name="app_version">App Version</string>
     <string name="select_a_language">Language to show</string>
     <string name="what_can_you_eat">What can you eat?</string>
-    <string name="i_m_alergic">I\'m Alergic</string>
-    <string name="allergic_msg">Hi. I want to tell you that I\'m alergic to those types of food listed bellow, be sure you are not using it on my food</string>
-    <string name="i_don_t_eat">I don\'t eat</string>
-    <string name="donteat_msg">Hi. I want to tell you that I don\'t eat those types of food listed bellow, be sure you are not using it on my food</string>
+    <string name="message_allergic_to">Hi! I want to tell you that I\'m allergic to those types of food listed bellow. Be sure you are not using it on my food</string>
+    <string name="message_dont_eat">Hi! I want to tell you that I don\'t eat those types of food listed bellow. Be sure you are not using it on my food</string>
+
+    <string name="serious_mode_on_msg">No!! Come on!! Seriously? Why take life so serious? But OK. Let\'s turn this serious mode on :D</string>
+    <string name="serious_mode_off_msg">Awesome :D. Life is too good. Let\'s have some fun :D</string>
 
 </resources>
