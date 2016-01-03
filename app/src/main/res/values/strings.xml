@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name" translatable="false">Food Restriction</string>
+    <string name="app_name" translatable="false">Food Restrictions</string>
     <string name="about_us_developers_text" translatable="false">* Thiago Ribeiro Mendes</string>
     <string name="about_us_icons_text" translatable="false">* Marcelo Torres\n *Google Team (https://design.google.com/icons/)</string>
     <string name="about_us_bt_changelog" translatable="false">Changelog</string>
@@ -17,8 +17,7 @@
     <string name="nav_donations">What about a coffee?</string>
     <string name="nav_icon_mode">Show Icons</string>
     <string name="nav_text_mode">Show Texts</string>
-    <string name="nav_help_us">Help Us :D</string>
-    <string name="nav_about_us">About Us \\o/</string>
+    <string name="nav_about_us">About</string>
 
     <string name="food_msg_not_allergic">I\'m not allergic to any type of food</string>
     <string name="food_msg_not_picker">I\'m not picker with the food</string>
@@ -49,5 +48,7 @@
 
     <string name="serious_mode_on_msg">No!! Come on!! Seriously? Why take life so serious? But OK. Let\'s turn this serious mode on :D</string>
     <string name="serious_mode_off_msg">Awesome :D. Life is too good. Let\'s have some fun :D</string>
+
+    <string name="about_us_translate">Help us to translate it</string>
 
 </resources>

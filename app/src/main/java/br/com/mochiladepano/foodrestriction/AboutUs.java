@@ -20,6 +20,8 @@
 package br.com.mochiladepano.foodrestriction;
 
 import android.content.DialogInterface;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AlertDialog;
@@ -44,13 +46,15 @@ public class AboutUs extends Fragment implements View.OnClickListener {
 
         TextView appVersion = (TextView) v.findViewById(R.id.tvVersion);
         Button btChangelog = (Button) v.findViewById(R.id.about_us_bt_changelog);
+        Button btTranslate = (Button) v.findViewById(R.id.about_us_bt_translate);
 
         btChangelog.setOnClickListener(this);
+        btTranslate.setOnClickListener(this);
 
         int versionCode = BuildConfig.VERSION_CODE;
         String versionName = BuildConfig.VERSION_NAME;
 
-        appVersion.setText(getResources().getString(R.string.app_version) + " " + versionName + " - (build " + versionCode + ")");
+        appVersion.setText(getResources().getString(R.string.app_version) + " " + versionName + " (build " + versionCode + ")");
 
         return v;
 
@@ -60,6 +64,13 @@ public class AboutUs extends Fragment implements View.OnClickListener {
     public void onClick(View view) {
 
         switch (view.getId()) {
+            case R.id.about_us_bt_translate:
+                Intent intent = new Intent(Intent.ACTION_VIEW,
+                        Uri.parse("https://crowdin.com/project/food-restrictions"));
+                startActivity(intent);
+
+                break;
+
             case R.id.about_us_bt_changelog:
                 try {
                     InputStream changelogIS = view.getResources().getAssets().open("changelog.txt");

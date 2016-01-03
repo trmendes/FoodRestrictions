@@ -58,11 +58,11 @@ public class FoodIconGrid extends Fragment {
 
                     switch (foodIconItem.getRestrictionType()) {
                         case FoodIconList.FOOD_RESTRICTION_TYPE_ALLERGIC:
-                            Snackbar.make(v, getResources().getString(R.string.message_allergic_to) + " " + getResources().getString(foodIconItem.getNameId()), Snackbar.LENGTH_LONG)
+                            Snackbar.make(v, getResources().getString(R.string.allergic_to) + " " + getResources().getString(foodIconItem.getNameId()), Snackbar.LENGTH_LONG)
                                     .setAction("Action", null).show();
                             break;
                         case FoodIconList.FOOD_RESTRICTION_TYPE_DONT_EAT:
-                            Snackbar.make(v, getResources().getString(R.string.message_dont_eat) + " " + getResources().getString(foodIconItem.getNameId()), Snackbar.LENGTH_LONG)
+                            Snackbar.make(v, getResources().getString(R.string.dont_eat) + " " + getResources().getString(foodIconItem.getNameId()), Snackbar.LENGTH_LONG)
                                     .setAction("Action", null).show();
                             break;
                     }

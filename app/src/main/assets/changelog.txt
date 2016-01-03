@@ -1,10 +1,9 @@
-The Food Restriction Changelog file
-
-- 2016.01.01 (build 1)
+- 2016.01.03 (build 16)
 
  * The Food Restriction goes Open Source (gpl3)
  * Graphical version of the user restrictions
  * Text version of the user restrictions
  * Starting with cow, chicken, pork, fish, cheese, milk and pepper
  * English and Portuguese-Brazil version
- * About/Configure App/My Restrictions Config
+ * Show Icons/Show Texts/My Restricions/Settings/About
+ * We are at Crowdin now https://crowdin.com/project/food-restrictions

@@ -25,6 +25,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
+import android.widget.Toast;
 
 /**
  * Created by tribeirom on 12/31/15.
@@ -62,6 +63,19 @@ public class AppConfig extends Fragment  implements View.OnClickListener  {
         switch(view.getId()) {
             case R.id.cb_settings_serious_mode:
                 appSettings.setSeriosMode(checked);
+                if (cbMakeItSerious.isChecked()) {
+                    Toast.makeText(
+                            view.getContext(),
+                            getResources()
+                                    .getString(R.string.serious_mode_on_msg),
+                            Toast.LENGTH_LONG).show();
+                } else {
+                    Toast.makeText(
+                            view.getContext(),
+                            getResources()
+                                    .getString(R.string.serious_mode_off_msg),
+                            Toast.LENGTH_LONG).show();
+                }
                 break;
             case R.id.cb_settings_help_dialog:
                 appSettings.setHelpDialog(checked);

@@ -10,8 +10,7 @@
   <string name="nav_donations">Que tal um café?</string>
   <string name="nav_icon_mode">Mostrar ícones</string>
   <string name="nav_text_mode">Mostrar texto</string>
-  <string name="nav_help_us">Nos Ajude :D</string>
-  <string name="nav_about_us">Sobre Nós \\o/</string>
+  <string name="nav_about_us">Sobre</string>
   <string name="food_msg_not_allergic">Eu não sou alérgico a nenhum tipo de comida</string>
   <string name="food_msg_not_picker">Eu não tenho frescura com comida</string>
   <string name="cow">Vaca</string>
@@ -35,4 +34,5 @@
   <string name="message_dont_eat">Oi! Eu quero lhe dizer que eu não como nenhuma dessas comidas listadas abaixo. Por favor certifique-se de que não esta usando nenhuma delas no meu prato.</string>
   <string name="serious_mode_on_msg">Não!! Fala Sério? Para que levar a vida tão a sério assim? Mas tudo bem. Vamos ativar o modo sério :D</string>
   <string name="serious_mode_off_msg">Demais :D. A vida é muito boa. Vamos nos divertir um pouco :D</string>
+  <string name="about_us_translate">Nos ajude a traduzir</string>
 </resources>

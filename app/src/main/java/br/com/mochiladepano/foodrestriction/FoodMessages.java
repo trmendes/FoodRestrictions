@@ -132,6 +132,8 @@ public class FoodMessages extends Fragment implements AdapterView.OnItemSelected
 
         for (final FoodIconItem iconItem : restrictList) {
             final String foodName = getResources().getString(iconItem.getNameId());
+            final String allergic_text = getResources().getString(R.string.allergic_to) + " " + foodName;
+            final String dont_eat_text = getResources().getString(R.string.dont_eat) + " " + foodName;
 
             TextView tv = new TextView(v.getContext());
             tv.setTextSize(TypedValue.COMPLEX_UNIT_SP, 18);
@@ -143,11 +145,11 @@ public class FoodMessages extends Fragment implements AdapterView.OnItemSelected
                 public void onClick(View v) {
                     switch (iconItem.getRestrictionType()) {
                         case FoodIconList.FOOD_RESTRICTION_TYPE_ALLERGIC:
-                            Snackbar.make(v, getResources().getString(R.string.message_allergic_to) + " " + foodName, Snackbar.LENGTH_LONG)
+                            Snackbar.make(v, allergic_text, Snackbar.LENGTH_LONG)
                                     .setAction("Action", null).show();
                             break;
                         case FoodIconList.FOOD_RESTRICTION_TYPE_DONT_EAT:
-                            Snackbar.make(v, getResources().getString(R.string.message_dont_eat) + " " + foodName, Snackbar.LENGTH_LONG)
+                            Snackbar.make(v, dont_eat_text, Snackbar.LENGTH_LONG)
                                     .setAction("Action", null).show();
                             break;
                     }
