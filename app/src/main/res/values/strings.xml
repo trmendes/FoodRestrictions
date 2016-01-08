@@ -17,12 +17,13 @@
     <string name="nav_donations">What about a coffee?</string>
     <string name="nav_icon_mode">Show Icons</string>
     <string name="nav_text_mode">Show Texts</string>
+    <string name="nav_veg_vegan">Vegetarian/Vegan</string>
     <string name="nav_about_us">About</string>
 
     <string name="food_msg_not_allergic">I\'m not allergic to any type of food</string>
     <string name="food_msg_not_picker">I\'m not picker with the food</string>
 
-    <string name="cow">Cow</string>allergic
+    <string name="cow">Beef</string>allergic
     <string name="chicken">Chicken</string>
     <string name="pork">Pork</string>
     <string name="fish">Fish</string>
@@ -48,5 +49,12 @@
 
     <string name="serious_mode_on_msg">No!! Come on!! Seriously? Why take life so serious? But OK. Let\'s turn this serious mode on :D</string>
     <string name="serious_mode_off_msg">Awesome :D. Life is too good. Let\'s have some fun :D</string>
+
+    <string name="msg_title_vegetarian">Vegetarian</string>
+    <string name="msg_title_vegan">Vegan</string>
+    <string name="msg_title_joke_cannibal">Cannibal</string>
+    <string name="msg_veget">Hi, I\'m vegetarian. I do not eat fish, seafood, poultry or any meat.</string>
+    <string name="msg_vegan">Hi, I\'m vegan. I do not eat fish, seafood, poultry, meat or any animal products, including eggs, dairy and honey.</string>
+    <string name="msg_joke_cannibal">Hi, I\'m a cannibal. I choose you to be my lunch today, would you like to follow me to the kitchen?</string>
 
 </resources>

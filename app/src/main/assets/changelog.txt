@@ -1,4 +1,8 @@
-- 2016.01.03 (build 16)
+(build 2)
+ * Adding new menu option to show a vegan/vegetarian message
+ * More languages to come :D
+
+- 2016.01.03 (build 1)
 
  * The Food Restriction goes Open Source (gpl3)
  * Graphical version of the user restrictions

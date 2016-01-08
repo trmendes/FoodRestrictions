@@ -11,6 +11,10 @@
             android:icon="@drawable/ic_format_color_text_black_24dp"
             android:title="@string/nav_text_mode" />
         <item
+            android:id="@+id/nav_veg_vegan"
+            android:icon="@drawable/ic_format_align_left_black_24dp"
+            android:title="@string/nav_veg_vegan" />
+        <item
             android:id="@+id/nav_food_settings"
             android:icon="@drawable/ic_local_dining_black_24dp"
             android:title="@string/nav_food_settings" />

@@ -31,6 +31,8 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.Toast;
 
@@ -136,6 +138,24 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        if (!getAppSettings().isSeriosMode()) {
+            MenuInflater inflater = getMenuInflater();
+
+            inflater.inflate(R.menu.activity_main_drawer, menu);
+
+            if (menu != null) {
+                MenuItem navVegMenu = menu.findItem(R.id.nav_veg_vegan);
+                String newMenuTitle = navVegMenu.getTitle() + "/" + getResources().getString(R.string.msg_joke_cannibal);
+                navVegMenu.setTitle(newMenuTitle);
+            }
+        }
+
+        return super.onCreateOptionsMenu(menu);
+    }
+
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
@@ -151,6 +171,7 @@ public class MainActivity extends AppCompatActivity
                     fragmentClass = FoodIconConfig.class;
                 }
                 break;
+
             case R.id.nav_text:
                 if (checkConfig()) {
                     fragmentClass = FoodMessages.class;
@@ -158,12 +179,19 @@ public class MainActivity extends AppCompatActivity
                     fragmentClass = FoodIconConfig.class;
                 }
                 break;
+
             case R.id.nav_app_settings:
                 fragmentClass = AppConfig.class;
                 break;
+
+            case R.id.nav_veg_vegan:
+                fragmentClass = MessageLanguageSelector.class;
+                break;
+
             case R.id.nav_food_settings:
                 fragmentClass = FoodIconConfig.class;
                 break;
+
             case R.id.nav_about_us:
                 fragmentClass = AboutUs.class;
                 break;
@@ -181,7 +209,6 @@ public class MainActivity extends AppCompatActivity
             FragmentManager fragmentManager = getSupportFragmentManager();
             fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
         }
-
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

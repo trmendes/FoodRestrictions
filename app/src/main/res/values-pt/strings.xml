@@ -34,4 +34,11 @@
   <string name="message_dont_eat">Oi! Eu quero lhe dizer que eu não como nenhuma dessas comidas listadas abaixo. Por favor certifique-se de que não esta usando nenhuma delas no meu prato.</string>
   <string name="serious_mode_on_msg">Não!! Fala Sério? Para que levar a vida tão a sério assim? Mas tudo bem. Vamos ativar o modo sério :D</string>
   <string name="serious_mode_off_msg">Demais :D. A vida é muito boa. Vamos nos divertir um pouco :D</string>
+  <string name="nav_veg_vegan">Vegetariano/Vegano</string>
+  <string name="msg_veget">Oi. Sou vegetariano/a e não como peixe, frutos do mar, aves ou qualquer tipo de carne.</string>
+  <string name="msg_vegan">Oi. Sou vegano/a e não como peixe, frutos do mar, aves, carne ou qualquer produto de origem animal, incluindo ovos, laticínios e mel.</string>
+  <string name="msg_title_vegetarian">Vegetariano</string>
+  <string name="msg_title_vegan">Vegano</string>
+  <string name="msg_title_joke_cannibal">Canibal</string>
+  <string name="msg_joke_cannibal">Oi, eu sou um canibal e escolhi você para ser meu almoço hoje. Gostaria de me seguir para a próximo cozinha?</string>
 </resources>
