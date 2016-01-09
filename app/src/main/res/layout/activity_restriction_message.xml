@@ -3,68 +3,71 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:orientation="vertical" android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/select_a_language"
+        android:id="@+id/tvLanguage"
+        android:textStyle="bold"
+        android:layout_margin="20px" />
 
+    <Spinner
+        android:layout_width="wrap_content"
+        android:id="@+id/spinner_language"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="@string/select_a_language"
-            android:id="@+id/tvLanguage"
-            android:layout_margin="10px" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="?android:attr/listDivider"
+        android:layout_marginTop="40px" />
 
-        <Spinner
-            android:layout_width="wrap_content"
-            android:id="@+id/spinner_language"
-            android:layout_height="wrap_content"
-            android:layout_margin="10px" />
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:background="?android:attr/listDivider"
-            android:layout_marginTop="20px" />
+            <TextView
+                android:layout_marginTop="40px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/message_allergic_to"
+                android:id="@+id/messages_allergic_text"
+                android:layout_gravity="center_horizontal" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="@string/message_allergic_to"
-            android:id="@+id/messages_allergic_text"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="10dp" />
+            <LinearLayout
+                android:padding="10dip"
+                android:id="@+id/llAllergic"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20px"></LinearLayout>
 
-        <LinearLayout
-            android:padding="10dip"
-            android:id="@+id/llAllergic"
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="20px"></LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="?android:attr/listDivider"/>
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:background="?android:attr/listDivider"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/message_dont_eat"
+                android:id="@+id/messages_dont_eat_text"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="@string/message_dont_eat"
-            android:id="@+id/messages_dont_eat_text"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="10dp" />
-
-        <LinearLayout
-            android:padding="10dip"
-            android:id="@+id/llDontEat"
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"></LinearLayout>
-    </LinearLayout>
-
+            <LinearLayout
+                android:padding="10dip"
+                android:id="@+id/llDontEat"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

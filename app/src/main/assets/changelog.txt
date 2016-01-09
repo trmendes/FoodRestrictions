@@ -1,4 +1,5 @@
 (build 2)
+ * Fixing the custom message window scroll
  * Adding new menu option to show a vegan/vegetarian message
  * More languages to come :D
 
