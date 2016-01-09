@@ -17,7 +17,7 @@
 /**
  */
 
-package br.com.mochiladepano.foodrestriction;
+package br.com.mochiladepano.foodrestrictions;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
@@ -52,9 +52,8 @@ public class AboutUs extends Fragment implements View.OnClickListener {
         webViewCredits.loadUrl("file:///android_asset/credits.html");
 
         int versionCode = BuildConfig.VERSION_CODE;
-        String versionName = BuildConfig.VERSION_NAME;
 
-        appVersion.setText(getResources().getString(R.string.app_version) + " " + versionName + " (build " + versionCode + ")");
+        appVersion.setText("build " + versionCode);
 
         return v;
 

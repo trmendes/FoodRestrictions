@@ -1,7 +1,9 @@
-- 2016.01.08 (build 2)
+- 2016.01.09 (build 2)
  * Fixing the custom message window scroll
  * Adding new menu option to show a vegan/vegetarian message
  * More languages to come :D
+ * Lost the Android Apk Generate Pasasword. Had to start the project again :(
+ * Because of this new key I have to change the package name :(
 
 - 2016.01.03 (build 1)
 

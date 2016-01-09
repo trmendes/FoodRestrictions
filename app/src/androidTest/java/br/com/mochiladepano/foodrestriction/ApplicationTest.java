@@ -17,7 +17,7 @@
 /**
  */
 
-package br.com.mochiladepano.foodrestriction;
+package br.com.mochiladepano.foodrestrictions;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

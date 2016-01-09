@@ -14,10 +14,8 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-/**
- */
 
-package br.com.mochiladepano.foodrestriction;
+package br.com.mochiladepano.foodrestrictions;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -27,9 +25,6 @@ import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.Toast;
 
-/**
- * Created by tribeirom on 12/31/15.
- */
 public class AppConfig extends Fragment  implements View.OnClickListener  {
 
     private AppSettings appSettings;

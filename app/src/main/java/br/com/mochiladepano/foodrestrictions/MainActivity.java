@@ -14,10 +14,8 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-/**
- */
 
-package br.com.mochiladepano.foodrestriction;
+package br.com.mochiladepano.foodrestrictions;
 
 
 import android.content.DialogInterface;
@@ -31,8 +29,6 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.Toast;
 
@@ -136,24 +132,6 @@ public class MainActivity extends AppCompatActivity
         } else {
             super.onBackPressed();
         }
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-
-        if (!getAppSettings().isSeriosMode()) {
-            MenuInflater inflater = getMenuInflater();
-
-            inflater.inflate(R.menu.activity_main_drawer, menu);
-
-            if (menu != null) {
-                MenuItem navVegMenu = menu.findItem(R.id.nav_veg_vegan);
-                String newMenuTitle = navVegMenu.getTitle() + "/" + getResources().getString(R.string.msg_joke_cannibal);
-                navVegMenu.setTitle(newMenuTitle);
-            }
-        }
-
-        return super.onCreateOptionsMenu(menu);
     }
 
     @SuppressWarnings("StatementWithEmptyBody")
