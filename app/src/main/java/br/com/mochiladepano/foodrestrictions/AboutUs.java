@@ -19,6 +19,7 @@
 
 package br.com.mochiladepano.foodrestrictions;
 
+import android.annotation.SuppressLint;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -36,6 +37,7 @@ import java.io.InputStream;
 
 public class AboutUs extends Fragment implements View.OnClickListener {
 
+    @SuppressLint("SetTextI18n")
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -98,6 +100,7 @@ public class AboutUs extends Fragment implements View.OnClickListener {
             outputStream.close();
             inputStream.close();
         } catch (IOException e) {
+            e.printStackTrace();
         }
         return outputStream.toString();
     }

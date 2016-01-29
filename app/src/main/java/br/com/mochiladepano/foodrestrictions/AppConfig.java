@@ -29,7 +29,6 @@ public class AppConfig extends Fragment  implements View.OnClickListener  {
 
     private AppSettings appSettings;
     private CheckBox cbMakeItSerious;
-    private CheckBox cbShowDialog;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -40,7 +39,7 @@ public class AppConfig extends Fragment  implements View.OnClickListener  {
         appSettings = MainActivity.getAppSettings();
 
         cbMakeItSerious = (CheckBox) v.findViewById(R.id.cb_settings_serious_mode);
-        cbShowDialog = (CheckBox) v.findViewById(R.id.cb_settings_help_dialog);
+        CheckBox cbShowDialog = (CheckBox) v.findViewById(R.id.cb_settings_help_dialog);
 
         cbMakeItSerious.setChecked(appSettings.isSeriosMode());
         cbShowDialog.setChecked(appSettings.isHelpDialog());

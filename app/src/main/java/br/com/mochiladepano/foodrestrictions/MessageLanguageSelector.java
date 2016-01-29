@@ -28,7 +28,6 @@ import android.widget.ListView;
 
 public class MessageLanguageSelector extends ListFragment {
 
-    private ArrayAdapter arrayAdapter;
     public static final String ARG_LANGUAGE = "arg_language";
 
     @Override
@@ -56,7 +55,7 @@ public class MessageLanguageSelector extends ListFragment {
         View v = inflater.inflate(
                 R.layout.activity_message_lang_selector, container, false);
 
-        arrayAdapter = ArrayAdapter.createFromResource(v.getContext(),
+        ArrayAdapter arrayAdapter = ArrayAdapter.createFromResource(v.getContext(),
                 R.array.languages_messages_array, android.R.layout.simple_list_item_1);
 
         setListAdapter(arrayAdapter);

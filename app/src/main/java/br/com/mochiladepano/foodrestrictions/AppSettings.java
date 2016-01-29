@@ -27,14 +27,13 @@ public class AppSettings {
     private static final String SETTINGS_APP_HELP_DIALOG = "br.mochiladepano.settings.app.helpdialog";
 
     private static AppSettings settings;
-    private final SharedPreferences sharedPref;
     private final SharedPreferences.Editor edit;
 
     private boolean seriosMode;
     private boolean helpDialog;
 
-    public AppSettings(Context ctx) {
-        sharedPref = PreferenceManager.getDefaultSharedPreferences(ctx);
+    private AppSettings(Context ctx) {
+        SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(ctx);
 
         seriosMode = sharedPref.getBoolean(AppSettings.SETTINGS_APP_SERIOUS_MODE, false);
         helpDialog = sharedPref.getBoolean(AppSettings.SETTINGS_APP_HELP_DIALOG, true);

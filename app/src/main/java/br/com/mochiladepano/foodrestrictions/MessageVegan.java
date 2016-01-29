@@ -53,7 +53,9 @@ public class MessageVegan extends Fragment {
          */
         Locale orgLocale = config.locale;
 
-        config.locale = new Locale(language);
+        if (language != null) {
+            config.locale = new Locale(language);
+        }
 
         /* Setting the new locale */
         rsc.updateConfiguration(config, rsc.getDisplayMetrics());

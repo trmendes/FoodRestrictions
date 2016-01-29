@@ -1,7 +1,5 @@
 <resources>
     <string name="app_name" translatable="false">Food Restrictions</string>
-    <string name="about_us_developers_text" translatable="false">* Thiago Ribeiro Mendes</string>
-    <string name="about_us_icons_text" translatable="false">* Marcelo Torres</string>
     <string name="about_us_bt_changelog" translatable="false">Changelog</string>
     <string name="app_version">Version</string>
 
@@ -14,7 +12,6 @@
 
     <string name="nav_app_settings">Settings</string>
     <string name="nav_food_settings">My Restrictions</string>
-    <string name="nav_donations">What about a coffee?</string>
     <string name="nav_icon_mode">Show Icons</string>
     <string name="nav_text_mode">Show Texts</string>
     <string name="nav_veg_vegan">Vegetarian/Vegan</string>
@@ -39,8 +36,6 @@
     <string name="help_message">1) You have to configure this application using the menu option \'My Restrictions\' to tell it which type of food you are allergic and which type of food you don\'t eat.\n\n 2) Next you will be able to choose in between a graphical version \'Show Icons\' or a text version \'Show texts\' to let people know more about your food restrictions.</string>
     <string name="help_not_show">Do not show it again</string>
 
-    <string name="about_us_developers_title">Source Developers</string>
-    <string name="about_us_icons_title">Icon Developers</string>
 
     <string name="select_a_language">Language to show</string>
     <string name="what_can_you_eat">What can you eat?</string>
@@ -56,5 +51,6 @@
     <string name="msg_veget">Hi, I\'m vegetarian. I do not eat fish, seafood, poultry or any meat.</string>
     <string name="msg_vegan">Hi, I\'m vegan. I do not eat fish, seafood, poultry, meat or any animal products, including eggs, dairy and honey.</string>
     <string name="msg_joke_cannibal">Hi, I\'m a cannibal. I choose you to be my lunch today, would you like to follow me to the kitchen?</string>
+    <string name="image" translatable="false">image</string>
 
 </resources>

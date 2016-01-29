@@ -24,8 +24,7 @@ import android.preference.PreferenceManager;
 public class FoodIconSettings {
 
     private static FoodIconSettings settings;
-    private final SharedPreferences sharedPref;
-    private final SharedPreferences.Editor edit;
+    private SharedPreferences.Editor edit = null;
 
     private final String FOOD_SETTINGS_DONTEAT_COW = "br.mochiladepano.settings.food.donteat.cow";
     private final String FOOD_SETTINGS_ALLERGIC_COW = "br.mochiladepano.settings.food.allergic.cow";
@@ -62,8 +61,8 @@ public class FoodIconSettings {
     private boolean dontEatPepper;
     private boolean allergicPepper;
 
-    public FoodIconSettings(Context ctx) {
-        sharedPref = PreferenceManager.getDefaultSharedPreferences(ctx);
+    private FoodIconSettings(Context ctx) {
+        SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(ctx);
 
         if (sharedPref != null) {
             this.dontEatCow = sharedPref.getBoolean(FOOD_SETTINGS_DONTEAT_COW, false);
@@ -88,8 +87,12 @@ public class FoodIconSettings {
             this.allergicPepper = sharedPref.getBoolean(FOOD_SETTINGS_ALLERGIC_PEPPER, false);
         }
 
-        edit = sharedPref.edit();
-        edit.apply();
+        if (sharedPref != null) {
+            edit = sharedPref.edit();
+            if (edit != null) {
+                edit.apply();
+            }
+        }
     }
 
     public static FoodIconSettings getFoodIconSettings(Context ctx) {

@@ -29,8 +29,7 @@ import android.widget.GridView;
 
 public class FoodIconGrid extends Fragment {
 
-    private Context ctx;
-    private FoodIconList foodIconList;
+    private final FoodIconList foodIconList;
 
     public FoodIconGrid() {
         foodIconList = new FoodIconList();
@@ -44,7 +43,7 @@ public class FoodIconGrid extends Fragment {
 
         GridView gridview = (GridView) v.findViewById(R.id.gridViewRestrictions);
 
-        ctx = container.getContext();
+        Context ctx = container.getContext();
 
         if (ctx != null) {
             gridview.setAdapter(new FoodImageAdapter(ctx, foodIconList.getFoodRestrictionList(true)));

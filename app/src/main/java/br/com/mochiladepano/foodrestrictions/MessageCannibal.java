@@ -50,7 +50,9 @@ public class MessageCannibal extends Fragment {
         /* Changing the language to the one the user have selected based on the
          * Languages.xml file
          */
-        config.locale = new Locale(language);
+        if (language != null) {
+            config.locale = new Locale(language);
+        }
 
         /* Setting the new locale */
         rsc.updateConfiguration(config, rsc.getDisplayMetrics());

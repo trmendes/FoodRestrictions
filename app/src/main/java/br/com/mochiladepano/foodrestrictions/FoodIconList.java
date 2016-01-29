@@ -20,7 +20,7 @@ package br.com.mochiladepano.foodrestrictions;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FoodIconList {
+class FoodIconList {
 
     private static List<FoodIconItem> iconList;
 

@@ -17,6 +17,7 @@
 
 package br.com.mochiladepano.foodrestrictions;
 
+import android.annotation.SuppressLint;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.graphics.Typeface;
@@ -38,7 +39,7 @@ import java.util.Locale;
 
 public class FoodMessages extends Fragment implements AdapterView.OnItemSelectedListener {
 
-    private FoodIconList foodIconList;
+    private final FoodIconList foodIconList;
     private List<FoodIconItem> restrictList;
     private LinearLayout llAllergic;
     private LinearLayout llDontEat;
@@ -115,15 +116,11 @@ public class FoodMessages extends Fragment implements AdapterView.OnItemSelected
         rsc.updateConfiguration(config, rsc.getDisplayMetrics());
     }
 
+    @SuppressLint("SetTextI18n")
     private void refreshMessages(View v) {
 
         int nAllergic = 0;
         int nDontEat = 0;
-        String victory = "";
-
-        if (!MainActivity.getAppSettings().isSeriosMode()) {
-            victory = "\\0/";
-        }
 
         llAllergic.removeAllViews();
         llDontEat.removeAllViews();

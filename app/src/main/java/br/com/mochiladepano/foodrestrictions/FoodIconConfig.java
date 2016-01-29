@@ -28,45 +28,28 @@ import android.widget.ImageView;
 
 public class FoodIconConfig extends Fragment implements View.OnClickListener {
 
-    private ImageView ivCow;
     private CheckBox cbDontEatCow;
     private CheckBox cbAllergicCow;
-    private boolean cow;
 
-    private ImageView ivChicken;
     private CheckBox cbDontEatChicken;
     private CheckBox cbAllergicChicken;
-    private boolean chicken;
 
-    private ImageView ivPork;
     private CheckBox cbDontEatPork;
     private CheckBox cbAllergicPork;
-    private boolean pork;
 
-    private ImageView ivFish;
     private CheckBox cbDontEatFish;
     private CheckBox cbAllergicFish;
-    private boolean fish;
 
-    private ImageView ivCheese;
     private CheckBox cbDontEatCheese;
     private CheckBox cbAllergicCheese;
-    private boolean cheese;
 
-    private ImageView ivMilk;
     private CheckBox cbDontEatMilk;
     private CheckBox cbAllergicMilk;
-    private boolean milk;
 
-    private ImageView ivPepper;
     private CheckBox cbDontEatPepper;
     private CheckBox cbAllergicPepper;
-    private boolean pepper;
 
     private FoodIconSettings foodSettings;
-
-    public FoodIconConfig() {
-    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -183,13 +166,13 @@ public class FoodIconConfig extends Fragment implements View.OnClickListener {
                         }
                     };
 
-            ivCow = (ImageView) v.findViewById(R.id.ivCow);
-            ivChicken = (ImageView) v.findViewById(R.id.ivChicken);
-            ivPork = (ImageView) v.findViewById(R.id.ivPork);
-            ivFish = (ImageView) v.findViewById(R.id.ivFish);
-            ivCheese = (ImageView) v.findViewById(R.id.ivCheese);
-            ivMilk = (ImageView) v.findViewById(R.id.ivMilk);
-            ivPepper = (ImageView) v.findViewById(R.id.ivPepper);
+            ImageView ivCow = (ImageView) v.findViewById(R.id.ivCow);
+            ImageView ivChicken = (ImageView) v.findViewById(R.id.ivChicken);
+            ImageView ivPork = (ImageView) v.findViewById(R.id.ivPork);
+            ImageView ivFish = (ImageView) v.findViewById(R.id.ivFish);
+            ImageView ivCheese = (ImageView) v.findViewById(R.id.ivCheese);
+            ImageView ivMilk = (ImageView) v.findViewById(R.id.ivMilk);
+            ImageView ivPepper = (ImageView) v.findViewById(R.id.ivPepper);
 
             ivCow.setOnClickListener(imageOnClickListener);
             ivChicken.setOnClickListener(imageOnClickListener);

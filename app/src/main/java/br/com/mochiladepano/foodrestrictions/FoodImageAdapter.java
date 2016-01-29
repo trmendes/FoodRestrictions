@@ -25,16 +25,12 @@ import android.widget.ImageView;
 
 import java.util.List;
 
-public class FoodImageAdapter extends BaseAdapter {
+class FoodImageAdapter extends BaseAdapter {
     private final Context mContext;
-    private List<FoodIconItem> iconList;
+    private final List<FoodIconItem> iconList;
 
     public FoodImageAdapter(Context c, List<FoodIconItem> iconList) {
         mContext = c;
-        this.iconList = iconList;
-    }
-
-    public void setIconList(List<FoodIconItem> iconList) {
         this.iconList = iconList;
     }
 
@@ -51,7 +47,7 @@ public class FoodImageAdapter extends BaseAdapter {
     }
 
     public View getView(int position, View convertView, ViewGroup parent) {
-        ImageView imageView = null;
+        ImageView imageView;
 
         if (convertView == null) {
             imageView = new ImageView(mContext);

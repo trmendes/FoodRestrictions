@@ -17,7 +17,7 @@
 
 package br.com.mochiladepano.foodrestrictions;
 
-public class FoodIconItem {
+class FoodIconItem {
 
     private int restrictionType;
     private int type;
@@ -28,12 +28,7 @@ public class FoodIconItem {
 
     }
 
-    public FoodIconItem(int restrictionsType, int type, int nameId, int IconId) {
-        this.restrictionType = restrictionType;
-        this.type = type;
-        this.nameId = nameId;
-        this.iconId = iconId;
-    }
+
 
     public int getRestrictionType() {
         return restrictionType;

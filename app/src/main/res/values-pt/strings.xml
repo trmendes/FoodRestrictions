@@ -7,7 +7,6 @@
   <string name="allergic_to">Eu sou alérgico a</string>
   <string name="nav_app_settings">Configurações</string>
   <string name="nav_food_settings">Minhas restrições</string>
-  <string name="nav_donations">Que tal um café?</string>
   <string name="nav_icon_mode">Mostrar ícones</string>
   <string name="nav_text_mode">Mostrar texto</string>
   <string name="nav_about_us">Sobre</string>
@@ -26,8 +25,6 @@
   <string name="help_title">Como funciona?</string>
   <string name="help_message">1) Você precisa configurar o aplicativo usando a opção do menu \'Minhas restrições\' para dizer qual o tipo de comida você é alético e qual você não come.\n\n 2) Depois você poderá escolher entre exibir os dados sobre suas restrições alimentares para as pessoas utilizando o menu \'Exibir ícones\' ou \'Exibir texto\'.</string>
   <string name="help_not_show">Não mostre novamente</string>
-  <string name="about_us_developers_title">Desenvolvedores</string>
-  <string name="about_us_icons_title">Desenvolvedores dos Ícones</string>
   <string name="select_a_language">Língua para mostrar</string>
   <string name="what_can_you_eat">O que você pode comer?</string>
   <string name="message_allergic_to">Oi! Eu queria lhe dizer que sou alérgico as comidas listadas abaixo. Por favor certifique-se de que não esta usando nenhuma delas no meu prato.</string>

@@ -112,7 +112,7 @@ public class MainActivity extends AppCompatActivity
 
     }
 
-    public boolean checkConfig() {
+    private boolean checkConfig() {
         if (foodIconList.getFoodRestrictionList(true).size() <= 0) {
             Toast.makeText(
                     getApplicationContext(),
