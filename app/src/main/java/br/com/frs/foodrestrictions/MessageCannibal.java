@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package br.com.mochiladepano.foodrestrictions;
+package br.com.frs.foodrestrictions;
 
 import android.content.res.Configuration;
 import android.content.res.Resources;
@@ -28,22 +28,16 @@ import android.widget.TextView;
 
 import java.util.Locale;
 
-public class MessageVegan extends Fragment {
+public class MessageCannibal extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(
-                R.layout.activity_message_vegan, container, false);
+                R.layout.activity_message_cannibal, container, false);
 
         String language = getArguments().getString(MessageLanguageSelector.ARG_LANGUAGE);
 
-        TextView tv = (TextView) v.findViewById(R.id.tvVegegan);
-
-        /* //TODO - Find a better way of doing it
-         * I don't believe that this is the best approach to handle this problem but it is
-         * the only way I found to do it so far. Do you have any better idea?
-         * please help me here :D
-         */
+        TextView tv = (TextView) v.findViewById(R.id.tvCannibal);
 
         /* Getting the current resource  and config info */
         Resources rsc =  v.getContext().getResources();
@@ -53,6 +47,9 @@ public class MessageVegan extends Fragment {
          */
         Locale orgLocale = config.locale;
 
+        /* Changing the language to the one the user have selected based on the
+         * Languages.xml file
+         */
         if (language != null) {
             config.locale = new Locale(language);
         }
@@ -60,7 +57,7 @@ public class MessageVegan extends Fragment {
         /* Setting the new locale */
         rsc.updateConfiguration(config, rsc.getDisplayMetrics());
         /* Updating the layout with the new selected language */
-        tv.setText(rsc.getString(R.string.msg_vegan));
+        tv.setText(rsc.getString(R.string.msg_joke_cannibal));
 
         /* Return to last locale to keep the app as it was before */
         config.locale = orgLocale;

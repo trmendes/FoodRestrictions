@@ -17,7 +17,7 @@
 /**
  */
 
-package br.com.mochiladepano.foodrestrictions;
+package br.com.frs.foodrestrictions;
 
 import android.annotation.SuppressLint;
 import android.content.DialogInterface;

@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package br.com.mochiladepano.foodrestrictions;
+package br.com.frs.foodrestrictions;
 
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;

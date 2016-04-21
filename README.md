@@ -11,7 +11,7 @@ Food Restriction is a mobile application to help you while travelling abroad. It
 
 #### Links
 
-[![The Food Restriction App for Android on PlayStore](https://developer.android.com/images/brand/en_app_rgb_wo_60.png)](https://play.google.com/store/apps/details?id=br.com.mochiladepano.foodrestrictions)
+[![The Food Restriction App for Android on PlayStore](https://developer.android.com/images/brand/en_app_rgb_wo_60.png)](https://play.google.com/store/apps/details?id=br.com.frs.foodrestrictions)
 
 #### Contact
 
