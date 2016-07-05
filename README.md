@@ -16,7 +16,6 @@ Food Restriction is a mobile application to help you while travelling abroad. It
 #### Contact
 
 For any question, bug report, suggestion please drop us a line
-[tribeirom@gmail.com](mailto:tribeirom@gmail.com)
 
 #### Translate
 
