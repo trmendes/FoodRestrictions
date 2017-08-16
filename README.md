@@ -11,7 +11,8 @@ Food Restriction is a mobile application to help you while travelling abroad. It
 
 #### Links
 
-[![The Food Restriction App for Android on PlayStore](https://developer.android.com/images/brand/en_app_rgb_wo_60.png)](https://play.google.com/store/apps/details?id=br.com.frs.foodrestrictions)
+[![The Food Restriction App for Android on F-Droid](https://f-droid.org/wiki/images/c/c4/F-Droid-button_available-on.png)](https://f-droid.org/packages/br.com.frs.foodrestrictions/)
+[![The Food Restriction App for Android on Google PlayStore](https://developer.android.com/images/brand/en_app_rgb_wo_60.png)](https://play.google.com/store/apps/details?id=br.com.frs.foodrestrictions)
 
 #### Contact
 
@@ -19,8 +20,8 @@ For any question, bug report, suggestion please drop us a line
 
 #### Translate
 
-If you want to join our translation team: [Food Restriction Translation Project on
-Crowdin.net](https://crowdin.com/project/food-restrictions)
+If you want to join our translation team:
+[Food Restriction Translation Project on Crowdin.net](https://crowdin.com/project/food-restrictions)
 
 #### The Food Restriction Project Team
 
@@ -30,11 +31,11 @@ Thiago Ribeiro Mendes
 
 ##### Developers
 
-Thiago Ribeiro Mendes<br/>
+Thiago Ribeiro Mendes
 
 ##### Icons Designers
 
-Marcelo Gomide Torres<br/>
+Marcelo Gomide Torres
 
 # License
 
@@ -53,5 +54,4 @@ Marcelo Gomide Torres<br/>
     GNU General Public License for more details.
  
     You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-    
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
