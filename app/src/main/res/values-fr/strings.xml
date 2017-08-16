@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+      Copyright (C) 2017 Nicola Spanti
+      
+      This program is free software; you can redistribute it and/or
+      modify it under the terms of the GNU General Public License
+      as published by the Free Software Foundation; either version 3
+      of the License, or (at your option) any later version.
+      
+      This program is distributed in the hope that it will be useful,
+      but WITHOUT ANY WARRANTY; without even the implied warranty of
+      MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+      GNU General Public License for more details.
+      
+      You should have received a copy of the GNU General Public License
+      along with this program.  If not, see <https://www.gnu.org/licenses/>.
+    -->
+    
+    <string name="app_version">Version</string>
+
+    <string name="navigation_drawer_open">Ouvrir le panneau de navigation</string>
+    <string name="navigation_drawer_close">Fermer le panneau de navigation</string>
+
+    <string name="allergic">Je ne suis pas allergique</string>
+    <string name="dont_eat">Je ne mange pas</string>
+    <string name="allergic_to">Je suis allergique à</string>
+
+    <string name="nav_app_settings">Paramètres</string>
+    <string name="nav_food_settings">Mes restrictions</string>
+    <string name="nav_icon_mode">Montrer les icones</string>
+    <string name="nav_text_mode">Montrer les textes</string>
+    <string name="nav_veg_vegan">Végétarien·ne/Végan·e</string>
+    <string name="nav_about_us">À propos</string>
+
+    <string name="food_msg_not_allergic">Je ne suis allergique à aucun type de nourriture</string>
+    <!--<string name="food_msg_not_picker">I\'m not picker with the food</string>-->
+
+    <string name="cow">Bœuf</string>
+    <string name="chicken">Poulet</string>
+    <string name="pork">Porc</string>
+    <string name="fish">Poisson</string>
+    <string name="cheese">Fromage</string>
+    <string name="milk">Lait</string>
+    <!--<string name="pepper">Pepper</string>-->
+
+    <string name="app_settings_turn_serious_mode_on">Activer le mode sérieux :(</string>
+    <string name="app_settings_show_help_dialog">Montrer la boite de dialogue d\'aide</string>
+
+    <string name="no_config_msg">Pour être capable de montrer vos restrictions alimentaires, vous devez d\'abord les configurer</string>
+    <string name="help_title">Comment cela fonctionne ?</string>
+    <string name="help_message">1) Vous devez configurer cette application en utilisant l\'option du menu \'Mes restrictions\' pour lui indiquer à quel type de nourriture vous êtes allergique ou ne voulez pas manger.\n\n 2) Ensuite vous serez capable de choisir entre une version graphique \'Montrer les icones\' ou une version textuelle \'Montrer les textes\' pour que les gens en sachent plus sur vos restrictions alimentaires.</string>
+    <string name="help_not_show">Ne pas le montrer à nouveau</string>
+
+
+    <string name="select_a_language">Langue à montrer</string>
+    <string name="what_can_you_eat">Qu\'est ce que vous pouvez manger ?</string>
+    <string name="message_allergic_to">Bonjour ! Je veux te dire que je suis allergique à ces types de nourriture indiqués en dessous. Soyez sûr de ne pas les utiliser pour ma nourriture</string>
+    <string name="message_dont_eat">Bonjour ! Je veux vous dire que je ne mange pas ces types de nourriture indiqués en dessous. Soyez sûr de ne pas les utiliser pour ma nourriture</string>
+
+    <string name="serious_mode_on_msg">Non ! Allons ! Sérieusement ? Pourquoi prendre la vie autant au sérieux ? Mais ok, activons ce mode sérieux :D</string>
+    <string name="serious_mode_off_msg">Incroyable :D. La vie est trop courte. Amuses-toi :D</string>
+
+    <string name="msg_title_vegetarian">Végétarien·ne</string>
+    <string name="msg_title_vegan">Végan·ne</string>
+    <string name="msg_title_joke_cannibal">Cannibale</string>
+    <string name="msg_veget">Bonjour, je suis végétarien·ne. Je ne mange pas de poisson et pas de viande.</string>
+    <string name="msg_vegan">Bonjour, je suis végan·e. Je ne mange aucun produit issu des animaux de leur exploitation animale (pas de viande, poisson, œuf, lait, beurre, miel, etc).</string>
+    <string name="msg_joke_cannibal">Bonjour, je suis cannibal·e. Je t'ai choisi pour être mon repas aujourd\'hui, veux-tu me suivre dans la cuisine ?</string>
+
+</resources>
