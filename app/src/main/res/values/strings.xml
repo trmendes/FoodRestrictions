@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name" translatable="false">Food Restrictions</string>
     <string name="about_us_bt_changelog" translatable="false">Changelog</string>
@@ -20,7 +21,7 @@
     <string name="food_msg_not_allergic">I\'m not allergic to any type of food</string>
     <string name="food_msg_not_picker">I\'m not picker with the food</string>
 
-    <string name="cow">Beef</string>allergic
+    <string name="cow">Beef</string>
     <string name="chicken">Chicken</string>
     <string name="pork">Pork</string>
     <string name="fish">Fish</string>
