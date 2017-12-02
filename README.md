@@ -9,6 +9,14 @@ Food Restriction is a mobile application to help you while travelling abroad. It
   * Graphical Food Restrictions by icons
   * Text Food Restrictions
 
+#### Screenshots
+
+<img src="assets/images/howto.png" width="30%">
+<img src="assets/images/config.png" width="30%">
+<img src="assets/images/menu.png" width="30%">
+<img src="assets/images/main.png" width="30%">
+<img src="assets/images/text.png" width="30%">
+
 #### Links
 
 [![The Food Restriction App for Android on F-Droid](https://f-droid.org/wiki/images/c/c4/F-Droid-button_available-on.png)](https://f-droid.org/packages/br.com.frs.foodrestrictions/)
@@ -20,8 +28,7 @@ For any question, bug report, suggestion please drop us a line
 
 #### Translate
 
-If you want to join our translation team:
-[Food Restriction Translation Project on Crowdin.net](https://crowdin.com/project/food-restrictions)
+Send us a Message
 
 #### The Food Restriction Project Team
 
