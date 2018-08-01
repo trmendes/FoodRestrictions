@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name" translatable="false">Restrictions alimentaires</string>
-    <string name="about_us_bt_changelog" translatable="false">Changelog</string>
+    <string name="app_name">Restrictions alimentaires</string>
+    <string name="about_us_bt_changelog">Changelog</string>
     <string name="app_version">Version</string>
 
     <string name="navigation_drawer_open">Ouvrir le panneau de navigation</string>
@@ -31,5 +31,5 @@
     <string name="help_message">1) Vous devez configurer cette application en utilisant l\'option du menu \'Mes restrictions\' pour lui indiquer à quel type de nourriture vous êtes allergique ou ne voulez pas manger.\n\n 2) Ensuite vous serez capable de choisir entre une version graphique \'Montrer les icones\' pour que les gens en sachent plus sur vos restrictions alimentaires.</string>
     <string name="help_not_show">Ne pas le montrer à nouveau</string>
 
-    <string name="image" translatable="false">image</string>
+    <string name="image">image</string>
 </resources>

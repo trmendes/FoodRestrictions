@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-      <string name="app_name" translatable="false">Restrições Alimentares</string>
-      <string name="about_us_bt_changelog" translatable="false">Mudanças</string>
+      <string name="app_name">Restrições Alimentares</string>
+      <string name="about_us_bt_changelog">Mudanças</string>
       <string name="app_version">Versão</string>
 
       <string name="navigation_drawer_open">Abrir gaveta de navegação</string>
@@ -31,6 +31,6 @@
       <string name="help_message">1) Você precisa configurar o aplicativo usando a opção do menu \'Minhas restrições\' para dizer qual o tipo de comida você é alético e qual você não come.\n\n 2) Depois você poderá escolher entre exibir os dados sobre suas restrições alimentares para as pessoas utilizando o menu \'Exibir ícones\' ou \'Exibir texto\'.</string>
       <string name="help_not_show">Não mostre novamente</string>
 
-      <string name="image" translatable="false">imagem</string>
+      <string name="image">imagem</string>
 
 </resources>
