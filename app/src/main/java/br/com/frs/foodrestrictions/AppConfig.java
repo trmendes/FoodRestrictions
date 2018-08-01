@@ -23,12 +23,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
-import android.widget.Toast;
 
 public class AppConfig extends Fragment  implements View.OnClickListener  {
 
     private AppSettings appSettings;
-    private CheckBox cbMakeItSerious;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -38,13 +36,10 @@ public class AppConfig extends Fragment  implements View.OnClickListener  {
 
         appSettings = MainActivity.getAppSettings();
 
-        cbMakeItSerious = (CheckBox) v.findViewById(R.id.cb_settings_serious_mode);
-        CheckBox cbShowDialog = (CheckBox) v.findViewById(R.id.cb_settings_help_dialog);
+        CheckBox cbShowDialog = v.findViewById(R.id.cb_settings_help_dialog);
 
-        cbMakeItSerious.setChecked(appSettings.isSeriosMode());
         cbShowDialog.setChecked(appSettings.isHelpDialog());
 
-        cbMakeItSerious.setOnClickListener(this);
         cbShowDialog.setOnClickListener(this);
 
         return v;
@@ -55,22 +50,6 @@ public class AppConfig extends Fragment  implements View.OnClickListener  {
         boolean checked = ((CheckBox) view).isChecked();
 
         switch(view.getId()) {
-            case R.id.cb_settings_serious_mode:
-                appSettings.setSeriosMode(checked);
-                if (cbMakeItSerious.isChecked()) {
-                    Toast.makeText(
-                            view.getContext(),
-                            getResources()
-                                    .getString(R.string.serious_mode_on_msg),
-                            Toast.LENGTH_LONG).show();
-                } else {
-                    Toast.makeText(
-                            view.getContext(),
-                            getResources()
-                                    .getString(R.string.serious_mode_off_msg),
-                            Toast.LENGTH_LONG).show();
-                }
-                break;
             case R.id.cb_settings_help_dialog:
                 appSettings.setHelpDialog(checked);
                 break;

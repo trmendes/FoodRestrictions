@@ -41,7 +41,7 @@ public class FoodIconGrid extends Fragment {
         View v = inflater.inflate(R.layout.activity_restriction_grid,
                 container, false);
 
-        GridView gridview = (GridView) v.findViewById(R.id.gridViewRestrictions);
+        GridView gridview = v.findViewById(R.id.gridViewRestrictions);
 
         Context ctx = container.getContext();
 

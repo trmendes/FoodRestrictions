@@ -54,6 +54,7 @@ class FoodIconItem {
         this.nameId = nameId;
     }
 
+    @SuppressWarnings("unused")
     public int getType() {
         return type;
     }

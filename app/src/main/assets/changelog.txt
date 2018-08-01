@@ -1,3 +1,7 @@
+- 2018-08-01 (build 3)
+ * Make it simple! For now it will have the visual mode only but I might implement a text version in the future.
+   Please, let me know how can I make this app better for you.
+
 - 2016.01.09 (build 2)
  * Fixing the custom message window scroll
  * Adding new menu option to show a vegan/vegetarian message

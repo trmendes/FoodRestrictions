@@ -6,13 +6,6 @@
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/app_settings_turn_serious_mode_on"
-        android:id="@+id/cb_settings_serious_mode"
-        android:layout_margin="10dp" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="@string/app_settings_show_help_dialog"
         android:id="@+id/cb_settings_help_dialog"
         android:layout_margin="10dp" />

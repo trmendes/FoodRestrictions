@@ -23,19 +23,16 @@ import android.preference.PreferenceManager;
 
 public class AppSettings {
 
-    private static final String SETTINGS_APP_SERIOUS_MODE = "br.mochiladepano.settings.app.seriousmode";
     private static final String SETTINGS_APP_HELP_DIALOG = "br.mochiladepano.settings.app.helpdialog";
 
     private static AppSettings settings;
     private final SharedPreferences.Editor edit;
 
-    private boolean seriosMode;
     private boolean helpDialog;
 
     private AppSettings(Context ctx) {
         SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(ctx);
 
-        seriosMode = sharedPref.getBoolean(AppSettings.SETTINGS_APP_SERIOUS_MODE, false);
         helpDialog = sharedPref.getBoolean(AppSettings.SETTINGS_APP_HELP_DIALOG, true);
 
         edit = sharedPref.edit();
@@ -47,16 +44,6 @@ public class AppSettings {
             settings = new AppSettings(ctx);
         }
         return settings;
-    }
-
-    public boolean isSeriosMode() {
-        return seriosMode;
-    }
-
-    public void setSeriosMode(boolean seriosMode) {
-        edit.putBoolean(SETTINGS_APP_SERIOUS_MODE, seriosMode);
-        edit.commit();
-        this.seriosMode = seriosMode;
     }
 
     public boolean isHelpDialog() {

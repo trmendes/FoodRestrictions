@@ -20,15 +20,6 @@
             </intent-filter>
         </activity>
 
-        <activity
-            android:name="br.com.frs.foodrestrictions.MessagesTab"
-            android:label="@string/app_name"
-            android:parentActivityName="br.com.frs.foodrestrictions.MainActivity" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="br.com.frs.foodrestrictions.MainActivity" />
-        </activity>
-
     </application>
 
 </manifest>

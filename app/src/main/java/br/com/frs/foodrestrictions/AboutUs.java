@@ -14,8 +14,6 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-/**
- */
 
 package br.com.frs.foodrestrictions;
 
@@ -45,9 +43,9 @@ public class AboutUs extends Fragment implements View.OnClickListener {
         View v = inflater.inflate(R.layout.activity_about_us,
                 container, false);
 
-        TextView appVersion = (TextView) v.findViewById(R.id.tvVersion);
-        Button btChangelog = (Button) v.findViewById(R.id.about_us_bt_changelog);
-        WebView webViewCredits = (WebView) v.findViewById(R.id.webViewCredits);
+        TextView appVersion = v.findViewById(R.id.tvVersion);
+        Button btChangelog = v.findViewById(R.id.about_us_bt_changelog);
+        WebView webViewCredits = v.findViewById(R.id.webViewCredits);
 
         btChangelog.setOnClickListener(this);
 
