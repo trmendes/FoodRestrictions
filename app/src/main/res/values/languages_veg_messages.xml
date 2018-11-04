@@ -3,5 +3,6 @@
     <string-array name="languages_messages_array">
         <item>English</item>
         <item>Portuguese</item>
+	<item>Spanish</item>
     </string-array>
 </resources>
