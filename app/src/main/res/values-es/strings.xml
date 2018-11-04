@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name" translatable="false">Food Restrictions</string>
+    <string name="about_us_bt_changelog" translatable="false">Changelog</string>
+    <string name="app_version">Versión</string>
+
+    <string name="navigation_drawer_open">Abrir el cajón de navegación</string>
+    <string name="navigation_drawer_close">Cerrar el cajón de navegación</string>
+
+    <string name="allergic">Soy alérgica/o</string>
+    <string name="dont_eat">No lo como</string>
+    <string name="allergic_to">Soy alérgica/o a</string>
+
+    <string name="nav_app_settings">Configuración</string>
+    <string name="nav_food_settings">Mis restricciones</string>
+    <string name="nav_icon_mode">Mostrar iconos</string>
+    <string name="nav_text_mode">Mostrar textos</string>
+    <string name="nav_veg_vegan">Vegetariano/Vegano</string>
+    <string name="nav_about_us">Acerca de</string>
+
+    <string name="food_msg_not_allergic">No soy alérgica/o a ningún tipo de comida</string>
+    <string name="food_msg_not_picker">I\'m not picker with the food</string>
+    <!-- Above strings needs to be translate yet. But I need a explanation of what means to not be "picker with the food". -->
+
+    <string name="cow">Ternera</string>
+    <string name="chicken">Pollo</string>
+    <string name="pork">Cerdo</string>
+    <string name="fish">Pescado</string>
+    <string name="cheese">Queso</string>
+    <string name="milk">Leche</string>
+    <string name="pepper">Pimiento</string>
+
+    <string name="app_settings_turn_serious_mode_on">Activar el modo serio :(</string>
+    <string name="app_settings_show_help_dialog">Mostrar diálogo de ayuda</string>
+
+    <string name="no_config_msg">Para poder mostrar tus restricciones alimenticias primero tienes que configurarlas</string>
+    <string name="help_title">¿Cómo funciona esto?</string>
+    <string name="help_message">1) Tienes que configurar esta aplicación utilizando la opción del menú \'Mis restricciones\' para señalar a que tipo de comida eres alérgica/o y que tipos no comes.\n\n 2) Luego podrás elegir entre la versión gráfica \'Mostrar iconos\' o la versión textual \'Mostrar textos\' para hacer saber más a las personas sobre tus restricciones alimenticias.</string>
+    <string name="help_not_show">No mostrar de nuevo</string>
+
+
+    <string name="select_a_language">Idioma que mostrar</string>
+    <string name="what_can_you_eat">¿Qué puedes comer?</string>
+    <string name="message_allergic_to">¡Hola! Quiero decirte que soy alérgico a los tipos de comida de la lista de abajo. Asegúrate de no usarlos en mi comida</string>
+    <string name="message_dont_eat">¡Hola! Quiero decirte que no como los tipos de comida de la lista de abajo. Asegúrate de no incluirlos en mi comida</string>
+
+    <string name="serious_mode_on_msg">¡No! ¡Vamos! ¿En serio? ¿Por qué tomarse la vida tan en serio? Bueno, está bien. Activemos el modo serio :D</string>
+    <string name="serious_mode_off_msg">Asombroso :D. La vida es demasiado buena. Tengamos algo de diversión :D</string>
+
+    <string name="msg_title_vegetarian">Vegetariano</string>
+    <string name="msg_title_vegan">Vegano</string>
+    <string name="msg_title_joke_cannibal">Caníbal</string>
+    <string name="msg_veget">Hola, soy vegetariano. No como pescado, ni marisco ni ninguna carne.</string>
+    <string name="msg_vegan">Hola, soy vegano. No como pescado, ni marisco, ninguna carne, ni ningún producto de origen animal, incluyendo huevos, lascteos y miel.</string>
+    <string name="msg_joke_cannibal">Hola, soy caníbal. Te he elegido a ti para ser mi comida de hoy, ¿te importaría seguirme a la cocina?</string>
+    <string name="image" translatable="false">image</string>
+
+</resources>
